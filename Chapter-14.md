@@ -6,7 +6,7 @@
 - **Lệnh gốc:** `wget https://uvm:317@inteltechniques.com/osintvm/install.sh`
 
 ### Quyết định kỹ thuật (Decision):
-- [x] **SKIP EXECUTION:** Vì tôi đang sử dụng **Kali Linux** (đã tích hợp sẵn nhiều tool và cấu hình riêng), việc chạy script dành cho Debian có thể gây vỡ hệ thống (broken dependencies/conflicts).
+- [x] **SKIP EXECUTION:** Vì em đang sử dụng **Kali Linux** (đã tích hợp sẵn nhiều tool và cấu hình riêng), việc chạy script dành cho Debian có thể gây vỡ hệ thống (broken dependencies/conflicts).
 - [x] **SOURCE CODE REVIEW:** Đã tải script về chỉ để tham khảo danh sách tool/cấu hình.
 - [ ] **Manual Check:** Nếu phát hiện tool nào hay trong script mà Kali chưa có -> Cài tay.
 
