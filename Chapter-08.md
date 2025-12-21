@@ -28,10 +28,6 @@
 - Install GRUB boot loader: **Yes**
 - Install to: **/dev/sda**
 
-## 4) Sau khi cài xong
-- Update hệ thống:
-  - `sudo apt update && sudo apt full-upgrade -y`
-
 ## 5) Thực hành
 <img width="976" height="685" alt="image" src="https://github.com/user-attachments/assets/c436d29c-4055-4268-be42-20e3aec3a529" />
 <img width="1912" height="947" alt="image" src="https://github.com/user-attachments/assets/b4b8cca5-77c6-4238-af82-45cb34bad38a" />
