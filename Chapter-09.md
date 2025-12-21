@@ -1,5 +1,5 @@
 # OSINT TECHNIQUES (CHAPTER 9)
-**Môi trường:** Firefox ESR (Kali Linux Default)
+**Môi trường:** Firefox ESR (Linux Debian)
 
 ---
 
