@@ -5,7 +5,7 @@ OSINT VM **Web Browsers** trên Debian (Build trắng + cấu hình Firefox cho 
 
 ---
 
-## 0) Preview
+## 0) Cấu hình cho firefox và cài extension
 <img width="1362" height="854" alt="image" src="https://github.com/user-attachments/assets/8d0375fe-e0b7-408c-8819-69c7a6058a1f" />
 <img width="758" height="710" alt="image" src="https://github.com/user-attachments/assets/651f8a15-45b4-4495-abf1-31f7ea82d179" />
 
@@ -83,6 +83,10 @@ OSINT VM **Web Browsers** trên Debian (Build trắng + cấu hình Firefox cho 
 
 - **User-Agent Switcher and Manager**
   - Mục đích: giả lập mobile/desktop để thấy UI khác, nội dung khác, hoặc bypass chặn đơn giản.
+  <img width="844" height="295" alt="image" src="https://github.com/user-attachments/assets/07d07eb8-439e-40ac-add6-3a5e9396613b" />
+  <img width="933" height="312" alt="image" src="https://github.com/user-attachments/assets/1b6ac902-79af-49ed-9840-d98e7dd7504f" />
+
+
 
 ### 4.4 Nhóm “tăng tốc quy trình”
 - **Copy Selected Links**: copy toàn bộ hyperlink trên trang.
@@ -93,21 +97,11 @@ OSINT VM **Web Browsers** trên Debian (Build trắng + cấu hình Firefox cho 
 
 ## 5) Export/Import cấu hình Firefox (để tái lập VM)
 - Mục tiêu: cài 1 lần, clone/backup dùng lại.
-- Cách làm (mô tả ở mức thao tác):
-  - Vào `about:profiles` để biết profile đang dùng nằm ở đâu.
-  - Nén thư mục profile (tar/zip).
-  - Import vào VM mới bằng cách giải nén đúng vị trí.
+<img width="1249" height="696" alt="image" src="https://github.com/user-attachments/assets/a6d8125c-838d-45b8-8efe-eb99b107ef78" />
 
 ---
 
-## 6) Lỗi thường gặp & bài học
-- Site “vỡ” do block script quá mạnh → dùng uBlock nâng cao thay vì tắt hết.
-- Containers không tự mở đúng site → tạo rule “Always open in container…”.
-- Capture trang quá dài bị lỗi → đổi công cụ (FireShot ↔ Nimbus ↔ SingleFile).
-
----
-
-## 7) Kết luận
+## 6) Kết luận
 Sau Chapter 9, em đã:
 - Có Firefox cấu hình chuẩn OSINT,
 - Có add-ons phục vụ thu thập chứng cứ,
