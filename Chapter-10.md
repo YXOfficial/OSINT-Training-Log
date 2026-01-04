@@ -62,11 +62,11 @@ ffmpeg -version
 ```
 <img width="713" height="56" alt="image" src="https://github.com/user-attachments/assets/c4b66f16-758a-46aa-b3c9-e3409e99f3c3" />
 
-* **Mini demo (ý tưởng đúng sách):**
+* **Mini demo**
 
   * Convert 1 file video bất kỳ: `ffmpeg -i input.mpg output.mp4`
-  * Trích frame (tùy tình huống): trích 1 frame/giây hoặc theo mốc thời gian
-    *(TODO: screenshot `ffmpeg -version` + 1 file output sau convert/trích frame)*
+<img width="890" height="715" alt="image" src="https://github.com/user-attachments/assets/b9b0626d-8d18-45dc-9c27-b8a3112f415e" />
+
 
 ### 3.2 YT-DLP (pipx) ✅
 
@@ -82,14 +82,7 @@ pipx install yt-dlp && pipx ensurepath
 yt-dlp --version
 ```
 
-* **Mini demo theo sách (YouTube test):**
-
-```bash
-cd ~/Desktop
-yt-dlp "https://www.youtube.com/watch?v=lLWEXRAnQd0"
-```
-
-* **Thu thập “phần phụ trợ” (đúng tinh thần PDF):**
+* **Thu thập “phần phụ trợ”:**
 
 ```bash
 yt-dlp "https://www.youtube.com/watch?v=lLWEXRAnQd0" --write-description
@@ -100,7 +93,6 @@ yt-dlp "https://www.youtube.com/watch?v=lLWEXRAnQd0" --write-comments
 * **Móc nối Chapter 9 → 10 (stream m3u8/dash):**
 
   * Dùng Stream Detector lấy URL m3u8 → đưa URL đó vào yt-dlp để tải.
-    *(TODO: screenshot tải thành công + file output / hoặc log terminal)*
 
 ### 3.3 Streamlink (pipx hoặc venv)
 
@@ -117,13 +109,12 @@ pipx ensurepath
 streamlink --version
 ```
 
-* **Mini demo (đúng kiểu sách):**
+**Mini demo:**
 
 ```bash
 streamlink https://www.twitch.tv/<channel> best -o evidence.mp4
 ```
-
-*(TODO: screenshot `streamlink --version` + log ghi file)*
+<img width="1705" height="833" alt="image" src="https://github.com/user-attachments/assets/3c4df643-0464-4d66-b8c3-9a3a48dbd4f6" />
 
 ---
 
@@ -149,7 +140,8 @@ sherlock --help
 sherlock <username_can_test>
 ```
 
-*(TODO: screenshot output kết quả “found/not found”)*
+<img width="651" height="356" alt="image" src="https://github.com/user-attachments/assets/17623a43-1065-40c6-a9a4-bdb96d10db0e" />
+
 
 ### 4.2 SocialScan
 
@@ -165,7 +157,8 @@ pipx install socialscan
 socialscan --help
 ```
 
-*(TODO: screenshot `socialscan --help` hoặc 1 lần chạy test)*
+<img width="802" height="427" alt="image" src="https://github.com/user-attachments/assets/5dd2bdb4-013d-4126-92b8-f20c8bdcea6c" />
+
 
 ---
 
@@ -184,7 +177,8 @@ pipx install holehe
 holehe --help
 ```
 
-*(TODO: screenshot `holehe --help` + (nếu được) 1 lần chạy test với email demo/được phép)*
+<img width="801" height="360" alt="image" src="https://github.com/user-attachments/assets/f021e00c-3b38-439c-a1c3-47646ef16dfe" />
+
 
 ### 5.2 GHunt
 
@@ -198,9 +192,9 @@ holehe --help
 pipx install ghunt
 ghunt --help
 ```
+<img width="637" height="428" alt="image" src="https://github.com/user-attachments/assets/23bdd23c-a492-4852-bf67-70a9b47c6693" />
 
-* *Ghi chú đúng thực tế:* tool này dễ fail nếu không có cookie/session hợp lệ → phải note rõ “điều kiện chạy”.
-  *(TODO: screenshot cài đặt + note lỗi nếu gặp)*
+
 
 ### 5.3 H8mail (+ hash tools)
 
@@ -216,14 +210,16 @@ pipx install name-that-hash
 pipx install search-that-hash
 ```
 
-* **Mini demo nhận diện hash (đúng tinh thần sách):**
+* **Mini demo nhận diện hash (theo pdf):**
 
 ```bash
 nth --text "5f4dcc3b5aa765d61d8327deb882cf99"
 sth --text "5f4dcc3b5aa765d61d8327deb882cf99"
 ```
 
-*(TODO: screenshot output nhận diện MD5)*
+<img width="806" height="499" alt="image" src="https://github.com/user-attachments/assets/e70915c5-9347-4807-9f0a-96e9e8da2fcd" />
+<img width="801" height="362" alt="image" src="https://github.com/user-attachments/assets/d03eac22-448e-4abf-83d6-edf6e9543417" />
+
 
 ---
 
@@ -243,7 +239,8 @@ pipx install gallery-dl
 gallery-dl --help
 ```
 
-*(TODO: screenshot `gallery-dl --help` hoặc 1 lần tải album public)*
+<img width="783" height="470" alt="image" src="https://github.com/user-attachments/assets/50433b3b-6bb4-4346-a96c-562e93b09119" />
+
 
 ### 6.2 Instagram tools (Instaloader / Toutatis / Osintgram)
 
@@ -260,7 +257,6 @@ pipx install toutatis
 ```
 
 * **Ghi chú:** Toutatis thường cần `sessionid` lấy từ cookie trình duyệt.
-  *(TODO: screenshot cài đặt + note điều kiện chạy / lỗi gặp)*
 
 ---
 
@@ -273,7 +269,7 @@ pipx install toutatis
 
   * Khi điều tra nhiều domain/subdomain, EyeWitness giúp “quét mặt tiền” rất nhanh.
   * Report HTML dễ đưa vào hồ sơ chứng cứ.
-* **Cài đặt (git clone theo sách):**
+* **Cài đặt (git clone pdf):**
 
 ```bash
 cd ~/Downloads/Programs
@@ -311,7 +307,8 @@ pipx install waybackpy
 pipx install waybackpack
 ```
 
-*(TODO: screenshot `--help` hoặc 1 lần chạy lấy known_urls)*
+<img width="706" height="212" alt="image" src="https://github.com/user-attachments/assets/4cc00821-06e9-46a0-8334-7c83711c1b3d" />
+
 
 ### 7.4 ChangeDetection.io / ArchiveBox (tùy chọn nâng cao)
 
@@ -347,8 +344,10 @@ sudo apt update
 sudo apt install libimage-exiftool-perl -y
 exiftool -ver
 ```
+<img width="334" height="55" alt="image" src="https://github.com/user-attachments/assets/6908c9e6-3e8d-49a0-8e4b-a2971833c239" />
 
-*(TODO: screenshot exiftool chạy trên 1 ảnh gốc hoặc file mẫu)*
+<img width="658" height="378" alt="image" src="https://github.com/user-attachments/assets/0e49e5d4-1a84-4c2c-b6d9-3d60cb0ee5d8" />
+
 
 ### 8.2 mat2
 
@@ -363,7 +362,8 @@ sudo apt install mat2 -y
 mat2 --help
 ```
 
-*(TODO: screenshot `mat2 --help` hoặc demo trên 1 file test)*
+<img width="419" height="46" alt="image" src="https://github.com/user-attachments/assets/b4d2d4a9-a018-4c20-bd8c-cb6f4e98e1a9" />
+
 
 ### 8.3 xeuledoc
 
@@ -380,7 +380,7 @@ xeuledoc --help
 
 *(TODO: screenshot output khi chạy với 1 link public hợp lệ)*
 
-### 8.4 Sherloq / MediaInfo / Metagoofil (tùy chọn theo sách)
+### 8.4 Sherloq / MediaInfo / Metagoofil (tùy chọn pdf)
 
 * **Sherloq:** hỗ trợ phát hiện dấu hiệu chỉnh sửa ảnh (forensics hỗ trợ).
 * **MediaInfo GUI:** xem metadata video/audio bằng giao diện.
